@@ -128,4 +128,16 @@ void display_switches();
  */
 extern uint32_t timeout;
 
+
+/**
+ * @brief ASCII offset for PDU command characters.
+ * 
+ * This offset is used to convert between ASCII character representations
+ * and numerical command values in the PDU protocol. Commands are typically
+ * transmitted as ASCII characters starting from this offset value.
+ * 
+ * Example: CommandPing (value 1) would be transmitted as ASCII character 49 ('1')
+ */
+#define PDU_CMD_ASCII_OFFSET 48
+
 #endif // PDU_PROTOCOL_H
